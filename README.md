@@ -13,7 +13,7 @@ pip install graphite-mcp
 Or from source:
 
 ```bash
-git clone https://github.com/Sherwin-Graphite/graphite-mcp.git
+git clone https://github.com/GraphiteAI/graphite-mcp
 cd graphite-mcp
 pip install -e .
 ```
