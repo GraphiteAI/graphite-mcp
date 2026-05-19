@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "graphite-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server for the Graphite Financial Knowledge Graph — wires it into Claude Code, Claude Desktop, Cursor, Codex CLI, and any other MCP-compatible client."
 readme = "README.md"
 requires-python = ">=3.10"
