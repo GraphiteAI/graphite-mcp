@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphite-mcp"
+version = "0.1.0"
+description = "MCP server for the Graphite Financial Knowledge Graph — wires it into Claude Code, Claude Desktop, Cursor, Codex CLI, and any other MCP-compatible client."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Graphite" }]
+keywords = ["mcp", "knowledge-graph", "finance", "claude", "anthropic", "openai", "codex"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+graphite-mcp = "graphite_mcp.__main__:main"
+
+[project.urls]
+Homepage = "https://graph.graphite-ai.net"
+API = "https://api.graphite-ai.net"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["graphite_mcp*"]
